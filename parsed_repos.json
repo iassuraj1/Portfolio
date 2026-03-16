@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Weather_Web_App",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/Weather_Web_App",
+    "live": "https://weather-web-app-lilac-alpha.vercel.app"
+  },
+  {
+    "title": "AI-integration",
+    "description": "",
+    "tech": [
+      "HTML"
+    ],
+    "github": "https://github.com/iassuraj1/AI-integration",
+    "live": "#"
+  },
+  {
+    "title": "AI-Chatbot",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/AI-Chatbot",
+    "live": "https://ai-chatbot-drab-chi-47.vercel.app"
+  },
+  {
+    "title": "Affiguru",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/Affiguru",
+    "live": "https://affiguru.vercel.app"
+  },
+  {
+    "title": "NodeJS",
+    "description": "",
+    "tech": [],
+    "github": "https://github.com/iassuraj1/NodeJS",
+    "live": "#"
+  },
+  {
+    "title": "vehicle",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/vehicle",
+    "live": "https://vehicle-ruby.vercel.app"
+  },
+  {
+    "title": "3DGallery",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/3DGallery",
+    "live": "#"
+  },
+  {
+    "title": "customer_relationship_management_system",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/customer_relationship_management_system",
+    "live": "#"
+  },
+  {
+    "title": "CRM_SYSTEM",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/CRM_SYSTEM",
+    "live": "#"
+  },
+  {
+    "title": "E-Commerce_Clone",
+    "description": "",
+    "tech": [
+      "HTML"
+    ],
+    "github": "https://github.com/iassuraj1/E-Commerce_Clone",
+    "live": "#"
+  },
+  {
+    "title": "Amazon_Clone",
+    "description": "",
+    "tech": [
+      "HTML"
+    ],
+    "github": "https://github.com/iassuraj1/Amazon_Clone",
+    "live": "#"
+  },
+  {
+    "title": "Inciterz",
+    "description": "",
+    "tech": [],
+    "github": "https://github.com/iassuraj1/Inciterz",
+    "live": "#"
+  },
+  {
+    "title": "Skin-Disease-Detection",
+    "description": "Skin Disease Detection",
+    "tech": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/iassuraj1/Skin-Disease-Detection",
+    "live": "#"
+  },
+  {
+    "title": "Roxiler_Assessment",
+    "description": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/iassuraj1/Roxiler_Assessment",
+    "live": "#"
+  },
+  {
+    "title": "Web-Heck",
+    "description": "",
+    "tech": [
+      "HTML"
+    ],
+    "github": "https://github.com/iassuraj1/Web-Heck",
+    "live": "#"
+  },
+  {
+    "title": "Web-Technology",
+    "description": "",
+    "tech": [
+      "CSS"
+    ],
+    "github": "https://github.com/iassuraj1/Web-Technology",
+    "live": "#"
+  }
+]
