@@ -4,6 +4,48 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    title: "NBAstro",
+    description: "Full-stack Vedic astrology & Vastu consultation platform featuring online appointment booking, dynamic course listings, and responsive UI.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Node.js"],
+    github: "#",
+    live: "http://137.23.45.174/"
+  },
+  {
+    title: "Attoemail",
+    description: "Modern email marketing and outreach web application with automated campaigns, email verification, data scraping, and analytics dashboard.",
+    tech: ["React", "Vite", "Tailwind CSS", "REST APIs"],
+    github: "#",
+    live: "https://attoemail.com"
+  },
+  {
+    title: "Business Summit 2026 - Sapphire",
+    description: "Official corporate summit and event website for Sapphire, featuring speaker lineups, conference schedules, agenda showcases, and attendee registration.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    github: "#",
+    live: "https://sapphireitsgevents.com/evente/index"
+  },
+  {
+    title: "Fulcrum Commercial Brokerage",
+    description: "Global commercial brokerage website connecting international oil, gas, and petrochemical trading partners with trade solutions and consultation requests.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    github: "#",
+    live: "https://fulcrumcb.com/"
+  },
+  {
+    title: "Karim Schumann",
+    description: "Luxury culinary platform and personal brand portfolio for Private Chef Karim Schumann in Zurich, featuring fine dining experiences, bespoke menus, and catering booking.",
+    tech: ["Laravel", "PHP", "Bootstrap", "JavaScript"],
+    github: "#",
+    live: "https://karimschumann.ch/"
+  },
+  {
+    title: "SLT London",
+    description: "Professional speech and language therapy healthcare portal for adults in London, featuring multilingual consultation booking, clinical services, and client inquiries.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    github: "#",
+    live: "https://www.sltlondon.com/"
+  },
+  {
     title: "Clonewatchshop",
     description: "Live e-commerce client project for a watch shop, fully built and customized.",
     tech: ["WordPress", "WooCommerce"],
@@ -147,7 +189,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 md:py-24 px-4 md:px-12 max-w-6xl mx-auto w-full">
+    <section id="projects" className="py-16 md:py-24 px-4 sm:px-6 md:px-12 max-w-[1440px] mx-auto w-full scroll-mt-20 md:scroll-mt-24">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -155,17 +197,17 @@ const Projects = () => {
         transition={{ duration: 0.8 }}
         className="w-full"
       >
-        <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-4 mb-16">
-          <span className="text-primary font-mono text-xl">02.</span> Some Things I've Built
-          <div className="h-px bg-white/10 flex-1 ml-4 block border-0"></div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold flex items-center gap-3 sm:gap-4 mb-10 sm:mb-16">
+          <span className="text-primary font-mono text-lg sm:text-xl">03.</span> Some Things I've Built
+          <div className="h-px bg-white/10 flex-1 ml-2 sm:ml-4 block border-0"></div>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full">
           {projects.map((project, index) => (
             <motion.div 
               key={index}
-              whileHover={{ y: -10 }}
-              className="glass border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_4px_30px_rgba(99,102,241,0.2)] hover:border-primary/30 rounded-2xl p-6 flex flex-col h-full group overflow-hidden w-full transition-all bg-slate-900/60"
+              whileHover={{ y: -8 }}
+              className="glass border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_4px_30px_rgba(99,102,241,0.2)] hover:border-primary/30 rounded-2xl p-5 sm:p-6 flex flex-col h-full group overflow-hidden w-full transition-all bg-slate-900/60"
             >
               <div className="flex justify-between items-center mb-6">
                 <div className="text-primary/70 group-hover:text-primary transition-colors">
@@ -175,8 +217,12 @@ const Projects = () => {
                   </svg>
                 </div>
                 <div className="flex gap-4 text-slate-400">
-                  <a href={project.github} className="hover:text-primary transition-colors"><Github size={20} /></a>
-                  <a href={project.live} className="hover:text-primary transition-colors"><ExternalLink size={20} /></a>
+                  {project.github && project.github !== "#" && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" title="View Source"><Github size={20} /></a>
+                  )}
+                  {project.live && project.live !== "#" && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" title="View Live"><ExternalLink size={20} /></a>
+                  )}
                 </div>
               </div>
               

@@ -12,10 +12,15 @@
   --background-image-gradient-glass: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
 }
 
-@layer base {
-  body {
-    @apply bg-dark text-slate-300 font-sans antialiased overflow-x-hidden;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: clip;
+}
+
+body {
+  @apply bg-dark text-slate-300 font-sans antialiased;
+  overflow-x: clip;
 }
 
 @layer utilities {

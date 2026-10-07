@@ -48,38 +48,39 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-32 px-6 max-w-3xl mx-auto text-center">
+    <section id="contact" className="py-16 md:py-32 px-4 sm:px-6 md:px-12 max-w-[1440px] mx-auto text-center scroll-mt-20 md:scroll-mt-24">
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
+        className="max-w-3xl mx-auto"
       >
-        <p className="text-primary font-mono mb-4 block">03. What's Next?</p>
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+        <p className="text-primary font-mono mb-3 text-sm sm:text-base block">05. What's Next?</p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Get In Touch</h2>
 
-        <p className="text-slate-400 text-lg mb-12">
+        <p className="text-slate-400 text-base sm:text-lg mb-8 sm:mb-12 max-w-xl mx-auto">
           I'm currently looking for new opportunities. Whether you have a question, a project proposal, or just want to say hi, my inbox is always open!
         </p>
 
         {/* Contact Information */}
-        <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-6 mb-12 pl-6 md:pl-0">
-          <a href="mailto:iassurajbhagat1@gmail.com" className="flex items-center gap-4 text-slate-300 hover:text-primary transition-colors group">
-            <div className="p-3 rounded-full bg-slate-800/50 group-hover:bg-primary/10 border border-white/5 group-hover:border-primary/30 transition-all flex-shrink-0">
-              <Mail className="w-5 h-5 text-primary" />
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 mb-10 sm:mb-12 w-full max-w-xl mx-auto">
+          <a href="mailto:surajkumarbhagat007@gmail.com" className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors group w-full sm:w-auto justify-center bg-white/5 sm:bg-transparent py-2.5 px-4 rounded-xl border border-white/5 sm:border-0">
+            <div className="p-2.5 rounded-full bg-slate-800/80 group-hover:bg-primary/20 border border-white/10 group-hover:border-primary/40 transition-all flex-shrink-0">
+              <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
             </div>
-            <span className="break-all text-left">iassurajbhagat1@gmail.com</span>
+            <span className="text-xs sm:text-sm font-mono truncate max-w-[240px] sm:max-w-none">surajkumarbhagat007@gmail.com</span>
           </a>
-          <a href="tel:+919525200203" className="flex items-center gap-4 text-slate-300 hover:text-primary transition-colors group mt-2 md:mt-0">
-            <div className="p-3 rounded-full bg-slate-800/50 group-hover:bg-primary/10 border border-white/5 group-hover:border-primary/30 transition-all flex-shrink-0">
-              <Phone className="w-5 h-5 text-primary" />
+          <a href="tel:9525200203" className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors group w-full sm:w-auto justify-center bg-white/5 sm:bg-transparent py-2.5 px-4 rounded-xl border border-white/5 sm:border-0">
+            <div className="p-2.5 rounded-full bg-slate-800/80 group-hover:bg-primary/20 border border-white/10 group-hover:border-primary/40 transition-all flex-shrink-0">
+              <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
             </div>
-            <span>+91-9525200203</span>
+            <span className="text-xs sm:text-sm font-mono">+91 9525200203</span>
           </a>
         </div>
 
         {/* Contact Form */}
-        <form onSubmit={onSubmit} className="max-w-2xl mx-auto text-left space-y-6 bg-slate-900/50 p-8 rounded-2xl border border-white/5 backdrop-blur-sm relative z-10 w-full">
+        <form onSubmit={onSubmit} className="max-w-2xl mx-auto text-left space-y-5 sm:space-y-6 bg-slate-900/60 p-5 sm:p-8 rounded-2xl border border-white/10 backdrop-blur-md relative z-10 w-full shadow-2xl">
           <input type="hidden" name="access_key" value="ea3d4d44-0b44-469b-9a84-1d88bbd6d8db" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             <div className="space-y-2 w-full">

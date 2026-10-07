@@ -34,9 +34,9 @@ function App() {
         style={{ scaleX }}
       />
       
-      {/* Dynamic Cursor Glow Effect */}
+      {/* Dynamic Cursor Glow Effect (Desktop Only) */}
       <div 
-        className="fixed top-0 left-0 w-96 h-96 rounded-full bg-primary/10 pointer-events-none blur-[100px] -z-10 transition-transform duration-300 ease-out"
+        className="hidden md:block fixed top-0 left-0 w-96 h-96 rounded-full bg-primary/10 pointer-events-none blur-[100px] -z-10 transition-transform duration-300 ease-out"
         style={{ 
           transform: `translate(${mousePosition.x - 192}px, ${mousePosition.y - 192}px)`
         }}
@@ -44,7 +44,7 @@ function App() {
 
       <Navbar />
       
-      <main className="flex flex-col w-full overflow-x-hidden">
+      <main className="flex flex-col w-full overflow-x-clip">
         <Hero />
         <About />
         <Experience />

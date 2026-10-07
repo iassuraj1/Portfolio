@@ -67,7 +67,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="py-16 md:py-24 px-6 md:px-12 max-w-6xl mx-auto w-full">
+    <section id="certifications" className="py-16 md:py-24 px-4 sm:px-6 md:px-12 max-w-[1440px] mx-auto w-full scroll-mt-20 md:scroll-mt-24">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -75,12 +75,12 @@ const Certifications = () => {
         transition={{ duration: 0.8 }}
         className="w-full"
       >
-        <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-4 mb-16">
-          <span className="text-primary font-mono text-xl">04.</span> Licenses & Certifications
-          <div className="h-px bg-white/10 flex-1 ml-4 block border-0"></div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold flex items-center gap-3 sm:gap-4 mb-10 sm:mb-16">
+          <span className="text-primary font-mono text-lg sm:text-xl">04.</span> Licenses & Certifications
+          <div className="h-px bg-white/10 flex-1 ml-2 sm:ml-4 block border-0"></div>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 w-full">
           {certifications.map((cert, index) => {
             const CardWrapper = cert.url ? 'a' : 'div';
             const wrapperProps = cert.url ? { 
@@ -93,7 +93,7 @@ const Certifications = () => {
               <motion.div key={index} whileHover={{ y: -5 }} className="h-full">
                 <CardWrapper 
                   {...wrapperProps}
-                  className="glass border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_4px_30px_rgba(99,102,241,0.2)] rounded-2xl p-6 flex flex-col h-full group overflow-hidden w-full relative hover:border-primary/30 transition-all bg-slate-900/60 cursor-pointer"
+                  className="glass border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_4px_30px_rgba(99,102,241,0.2)] rounded-2xl p-5 sm:p-6 flex flex-col h-full group overflow-hidden w-full relative hover:border-primary/30 transition-all bg-slate-900/60 cursor-pointer"
                 >
                   <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <Award size={80} className="text-primary" />
